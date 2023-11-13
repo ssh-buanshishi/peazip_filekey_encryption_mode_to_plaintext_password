@@ -9,7 +9,8 @@
 总之，可以理解为peazip和其他解压软件是能够“互通”的，明文密码就是“互通”的桥梁，peazip和其他解压软件最终都是通过明文密码进行加密或解密压缩文件的（peazip自己的压缩包格式“PEA”除外），只不过peazip的明文密码是通过它自己的方式算出来的，现在知道了这个计算的过程和原理后，桥梁就算被打通了。
 
 转换原理参考自：https://peazip.github.io/extract-encrypted-files.html ，如下图：
-![快照2](https://github.com/ssh-buanshishi/peazip_filekey_to_plaintext_password/assets/128020866/b0c4f513-cead-422d-96c0-af016cde81ba)
+![快照2](https://github.com/ssh-buanshishi/peazip_filekey_to_plaintext_password/assets/128020866/50324391-d47b-4b77-b5f2-999aeb0cf032)
+
 
 
 
