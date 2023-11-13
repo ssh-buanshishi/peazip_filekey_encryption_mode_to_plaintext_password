@@ -69,7 +69,7 @@
      <rect>
       <x>120</x>
       <y>60</y>
-      <width>801</width>
+      <width>841</width>
       <height>261</height>
      </rect>
     </property>
@@ -323,7 +323,7 @@
      <rect>
       <x>120</x>
       <y>390</y>
-      <width>681</width>
+      <width>721</width>
       <height>101</height>
      </rect>
     </property>
@@ -507,7 +507,7 @@
      <rect>
       <x>30</x>
       <y>510</y>
-      <width>891</width>
+      <width>931</width>
       <height>121</height>
      </rect>
     </property>
@@ -649,7 +649,7 @@
    <widget class="QPushButton" name="clear_input">
     <property name="geometry">
      <rect>
-      <x>810</x>
+      <x>850</x>
       <y>330</y>
       <width>111</width>
       <height>161</height>
@@ -714,13 +714,13 @@
      <string notr="true">复制</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="clear_history">
+   <widget class="QPushButton" name="clear_all_history">
     <property name="geometry">
      <rect>
       <x>800</x>
-      <y>650</y>
-      <width>121</width>
-      <height>111</height>
+      <y>730</y>
+      <width>161</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -730,7 +730,7 @@
      </font>
     </property>
     <property name="toolTip">
-     <string notr="true">每处理一个文件，程序都会记忆根据这个文件生成的sha256所对应的那部分密码，来加快运行速度。当文件被修改后，想要对被修改后的文件重新计算和生成时，请点击这个按钮以清除这部分记忆</string>
+     <string notr="true">每处理一个文件，程序都会记忆文件所对应的密钥值，来加快运行速度。当大量文件被修改后，不清楚哪些文件被修改了，请点击这个按钮以清除全部的记忆值，方便之后重新生成</string>
     </property>
     <property name="toolTipDuration">
      <number>45000</number>
@@ -748,7 +748,7 @@
      <string notr="true"/>
     </property>
     <property name="text">
-     <string notr="true">清除文件记忆</string>
+     <string notr="true">清除所有文件记忆</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -889,7 +889,7 @@
      <rect>
       <x>120</x>
       <y>60</y>
-      <width>801</width>
+      <width>841</width>
       <height>261</height>
      </rect>
     </property>
@@ -963,6 +963,9 @@
       <pointsize>20</pointsize>
      </font>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="acceptDrops">
      <bool>false</bool>
     </property>
@@ -1000,6 +1003,46 @@
      <string notr="true"/>
     </property>
    </widget>
+   <widget class="QPushButton" name="clear_current_history">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>650</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string notr="true">每处理一个文件，程序都会记忆文件所对应的密钥值，来加快运行速度。当【当前文件】被修改后，想要对【当前文件】重新计算和生成时，请点击这个按钮以清除【当前文件】的记忆值</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>45000</number>
+    </property>
+    <property name="statusTip">
+     <string notr="true"/>
+    </property>
+    <property name="whatsThis">
+     <string notr="true"/>
+    </property>
+    <property name="accessibleName">
+     <string notr="true"/>
+    </property>
+    <property name="accessibleDescription">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string notr="true">清除当前文件记忆</string>
+    </property>
+   </widget>
    <zorder>file_drop_display_layer</zorder>
    <zorder>file_drop_area</zorder>
    <zorder>password_input_area</zorder>
@@ -1009,11 +1052,12 @@
    <zorder>output_area</zorder>
    <zorder>clear_input</zorder>
    <zorder>copy_to_clipboard</zorder>
-   <zorder>clear_history</zorder>
+   <zorder>clear_all_history</zorder>
    <zorder>label_3</zorder>
    <zorder>label_4</zorder>
    <zorder>file_protect</zorder>
    <zorder>password_protect</zorder>
+   <zorder>clear_current_history</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar">
    <property name="toolTip">
