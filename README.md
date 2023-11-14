@@ -1,4 +1,4 @@
-# Peazip文件密钥 - 转 - 明文密码
+# Peazip文件密钥加密模式 - 转 - 明文密码
 # peazip_filekey_to_plaintext_password
 
 介绍：
