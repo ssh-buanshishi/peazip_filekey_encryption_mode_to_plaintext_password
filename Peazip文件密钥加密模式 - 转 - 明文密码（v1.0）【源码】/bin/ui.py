@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("宋体")
         MainWindow.setFont(font)
-        MainWindow.setWindowTitle("Peazip文件密钥 - 转 - 明文密码（v1.0）")
+        MainWindow.setWindowTitle("Peazip文件密钥加密模式 - 转 - 明文密码（v1.0）")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("PeaZip_app.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)

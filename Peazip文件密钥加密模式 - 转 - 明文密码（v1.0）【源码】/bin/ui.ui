@@ -16,7 +16,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string notr="true">Peazip文件密钥 - 转 - 明文密码（v1.0）</string>
+   <string notr="true">Peazip文件密钥加密模式 - 转 - 明文密码（v1.0）</string>
   </property>
   <property name="windowIcon">
    <iconset>
