@@ -1,5 +1,5 @@
 # Peazip文件密钥加密模式 - 转 - 明文密码
-# peazip_filekey_to_plaintext_password
+# peazip_filekey_encryption_mode_to_plaintext_password
 
 介绍：
 软件能在已知peazip中设定的密钥文件（可选）和密码（可选）的情况下，将peazip的这种双重验证加密模式，转换为可以被其他压缩软件识别的明文密码，进而无需安装peazip，即可解压由peazip的这种加密模式创建出来的压缩包（peazip自己的压缩包格式“PEA”除外）。
